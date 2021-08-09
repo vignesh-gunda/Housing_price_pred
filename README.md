@@ -27,4 +27,4 @@ This is the Procfile content of my web app.
 
 
 ## Link to the Website on Heroku
-https://evening-waters-72414.herokuapp.com/
+https://bostonprice.herokuapp.com/
