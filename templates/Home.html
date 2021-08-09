@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+body
+{
+  /* text-align: center; */
+  padding: 0px;
+}
+input[type=number], select 
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+​
+  /* button[type=submit] {
+  width: 100%;
+  background-color: #4CAF5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+
+​
+/* input[type=submit]:hover {
+  background-color: #45a049;
+}
+​ */
+div 
+{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#sub
+{
+  width: 30%;
+  background-color: #087828;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#sub:hover 
+{
+  background-color: #2bad51;
+}
+</style>
+
+<body>
+
+<h3> BOSTON HOUSING PREDICTION </h3><br>
+​
+<div>
+  <form method="POST", action="{{url_for('Home')}}">
+    <div>
+      <label for="name1">LSTAT (% of lower status of population)</label><br><br>
+      <input type="number" , step = "0.001", placeholder="Enter value (approx 0 to 30)"><br><br>
+    </div>
+    <div>
+      <label for="name2">RM (average number of rooms)</label><br><br>
+      <input type="number" , step = "0.001", name='b', placeholder="Enter value (approx 5 to 9)"><br><br>
+    </div>
+    <div>
+      <label for="name3">PTRATIO (pupil teacher ratio)</label><br><br>
+      <input type="number" , step = "0.001", name='c', placeholder="Enter Value (approx 10 to 25)"> <br><br><br>
+    </div>
+    <button id="sub" type="submit">Calculate the Selling Price</button>
+  </form>
+</div>
+</body>
+</html>
+​
