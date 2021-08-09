@@ -16,5 +16,15 @@ If you download the code from the GIT repository, you will need to have all the 
   pip install -r requirements.txt
 ```
 
-# Link to the Website on Heroku
+# Deployment on Heroku
+Deploying the app on Heroku platform is as easy as possible. Create an app on heroku with a suitable name and start deploying it with GITHUB or Heroku CLI by connecting it to your Github account. On successful connection and deploying from the repository the app is successfully build. Then you can visit the web app with the link you are provided with.
+
+A Procfile is used to tell Heroku how to run various pieces of the app.
+This is the Procfile content of my web app. 
+```bash
+  web: gunicorn app:app
+```
+
+
+## Link to the Website on Heroku
 https://evening-waters-72414.herokuapp.com/
