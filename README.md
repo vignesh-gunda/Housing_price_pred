@@ -12,5 +12,9 @@ The connect.py and app.py files have the linkage of the front-end with the back-
 # Running the code on your device locally:
 If you download the code from the GIT repository, you will need to have all the software mentioned in the requirements file installed on your local pc. Then on setting the path on command prompt where you have saved the files, run the command app.py (or python app.py) and copy paste the link provided on your browser.
 
+'''bash
+  pip install -r requirements.txt
+'''
+
 # Link to the Website on Heroku
 https://evening-waters-72414.herokuapp.com/
